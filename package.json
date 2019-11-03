@@ -2,7 +2,9 @@
   "name": "leancss",
   "version": "0.1.0",
   "description": "Extremely minimal and modular css framework",
-  "main": "dist/lean.min.css",
+  "main": "src/lean.scss",
+  "unpkg": "dist/lean.min.css",
+  "style": "leancss/dist/lean.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,8 +18,21 @@
     "minimal",
     "amp"
   ],
-  "author": "Jake Larson <jake.j.larson@gmail.com>",
+  "author": {
+    "name": "Jake Larson",
+    "email": "jake.j.larson@gmail.com",
+    "url": "http://jakelarson.io"
+  },
   "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10.17.0"
+  },
   "bugs": {
     "url": "https://github.com/larsonjj/leancss/issues"
   },
