@@ -1,6 +1,9 @@
 # Website
 build/
 
+# Generated Files
+dist/
+
 # Logs
 logs
 *.log

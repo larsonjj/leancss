@@ -5,6 +5,11 @@
   "main": "src/lean.scss",
   "unpkg": "dist/lean.min.css",
   "style": "leancss/dist/lean.min.css",
+  "scripts": {
+    "build": "npx gulp",
+    "prod": "npx gulp --production",
+    "start": "npx gulp watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/larsonjj/leancss.git"
@@ -38,12 +43,21 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
-    "node-sass": "^4.13.0",
     "postcss": "^7.0.21",
     "postcss-normalize": "^8.0.1",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-rename": "^1.4.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "del": "^5.1.0"
   },
   "lint-staged": {
     "src/**/*.{js,scss}": [
