@@ -28,7 +28,7 @@ gulp.task('sass', () => {
 });
 
 gulp.task('clean', () => {
-  return del([paths.dist]);
+  return del([`${paths.dist}/lean.*`]);
 });
 
 gulp.task('watch', () => {
