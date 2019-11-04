@@ -1,0 +1,43 @@
+// 480px, 768px, 960px, 1200px
+$grid-breakpoints: (
+  'sm': 30rem,
+  'md': 48rem,
+  'lg': 60rem,
+  'xlg': 75rem
+);
+$grid-cols: 12;
+$grid-gutter: 2rem; // 32px
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  &.flush > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  & > [class*='col'] {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-left: $grid_gutter / 2;
+    padding-right: $grid_gutter / 2;
+  }
+
+  @for $i from 1 through $grid-cols {
+    .col-#{$i} {
+      flex-basis: percentage($i / $grid-cols);
+      max-width: percentage($i / $grid-cols);
+    }
+    @each $name, $width in $grid-breakpoints {
+      @media screen and (min-width: $width) {
+        // Columns
+        .col-#{$name}-#{$i} {
+          flex-basis: percentage($i / $grid-cols);
+          max-width: percentage($i / $grid-cols);
+        }
+      }
+    }
+  }
+}
