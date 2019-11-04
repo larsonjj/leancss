@@ -37,10 +37,15 @@
     "url": "https://github.com/larsonjj/leancss/issues"
   },
   "homepage": "https://github.com/larsonjj/leancss#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
   "devDependencies": {
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "node-sass": "^4.13.0",
+    "postcss": "^7.0.21",
+    "postcss-normalize": "^8.0.1",
     "prettier": "^1.18.2"
   },
   "lint-staged": {
@@ -48,5 +53,6 @@
       "prettier --single-quote --jsx-bracket-same-line --write",
       "git add"
     ]
-  }
+  },
+  "browserslist": "last 4 versions"
 }
