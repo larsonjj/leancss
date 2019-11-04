@@ -18,7 +18,8 @@ gulp.task('sass', () => {
     .src(paths.src)
     .pipe(sourcemaps.init())
     .pipe(sass({
-      outputStyle: isProduction ? 'compressed' : 'expanded'
+      outputStyle: isProduction ? 'compressed' : 'expanded',
+      precision: 9
     }).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(rename({ suffix: '.min' }))
