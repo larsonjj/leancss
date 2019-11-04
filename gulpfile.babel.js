@@ -6,7 +6,7 @@ const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 const del = require('del');
 
-const isProduction = util.env.production;
+// const isProduction = util.env.production;
 const paths = {
   src: './src/lean.scss',
   dist: './website/static/css',
@@ -18,11 +18,11 @@ gulp.task('sass', () => {
     .src(paths.src)
     .pipe(sourcemaps.init())
     .pipe(sass({
-      outputStyle: isProduction ? 'compressed' : 'expanded',
+      outputStyle: 'compressed',
       precision: 9
     }).on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(rename({ suffix: isProduction ? '.min' : '' }))
+    .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dist));
 });
