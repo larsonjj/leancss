@@ -9,7 +9,7 @@ const del = require('del');
 const isProduction = util.env.production;
 const paths = {
   src: './src/lean.scss',
-  dist: './dist',
+  dist: './website/static/css',
   sass: './src/**/*.scss'
 }
 
@@ -22,7 +22,7 @@ gulp.task('sass', () => {
       precision: 9
     }).on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(rename({ suffix: isProduction ? '.min' : '' }))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dist));
 });

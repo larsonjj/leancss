@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "description": "Extremely minimal and modular css framework",
   "main": "src/lean.scss",
-  "unpkg": "dist/lean.min.css",
-  "style": "leancss/dist/lean.min.css",
+  "unpkg": "website/static/css/lean.min.css",
+  "style": "leancss/website/static/css/lean.min.css",
   "scripts": {
     "build": "npx gulp",
     "prod": "npx gulp --production",
-    "start": "npx gulp watch"
+    "start": "npx gulp watch",
+    "preversion": "npm run prod",
+    "postversion": "git push && git push --tags",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
