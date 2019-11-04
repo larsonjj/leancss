@@ -1,6 +1,6 @@
 {
   "name": "leancss",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Extremely minimal and modular css framework",
   "main": "src/lean.scss",
   "unpkg": "website/static/css/lean.min.css",
