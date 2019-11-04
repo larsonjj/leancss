@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://larsonjj.github.io/leancss/blog</id>
+    <title>Lean CSS Blog</title>
+    <updated>2019-01-01T06:00:00Z</updated>
+    <generator>Feed for Node.js</generator>
+    <link rel="alternate" href="https://larsonjj.github.io/leancss/blog"/>
+    <subtitle>The best place to stay up-to-date with the latest Lean CSS news and events.</subtitle>
+    <logo>https://larsonjj.github.io/leancss/img/favicon.ico</logo>
+    <rights>Copyright © 2019 Jake Larson</rights>
+    <entry>
+        <title type="html"><![CDATA[Lean CSS]]></title>
+        <id>https://larsonjj.github.io/leancss/blog/2019/01/01/blog-post.html</id>
+        <link href="https://larsonjj.github.io/leancss/blog/2019/01/01/blog-post.html">
+        </link>
+        <updated>2019-01-01T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.</p>
+]]></summary>
+        <author>
+            <name>Jake Larson</name>
+            <uri>http://twitter.com/larsonjj</uri>
+        </author>
+    </entry>
+</feed>
