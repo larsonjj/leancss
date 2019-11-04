@@ -9,7 +9,7 @@
     "build": "npx gulp",
     "prod": "npx gulp --production",
     "start": "npx gulp watch",
-    "gitcheck": "git diff-index --quiet HEAD -- || echo 'You have modified files in your working directory. Please commit them before building.' && exit 1",
+    "gitcheck": "git diff-index --quiet HEAD -- || { echo 'You have modified files in your working directory. Please commit them before building.'; exit $ERRCODE }",
     "preversion": "npm run prod && npm run gitcheck",
     "postversion": "git push && git push --tags",
     "precommit": "lint-staged"
