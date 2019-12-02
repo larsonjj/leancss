@@ -1,16 +1,8 @@
-/* your custom css */
+/* Visual helpers */
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
-}
-
-@media only screen and (min-width: 1024px) {
-}
-
-@media only screen and (max-width: 1023px) {
-}
-
-@media only screen and (min-width: 1400px) {
-}
-
-@media only screen and (min-width: 1500px) {
+.viz-block {
+  background: rgb(131, 104, 138);
+  color: white;
+  padding: 1rem 0.5rem;
+  border: 1px solid #f7f7f7;
 }
