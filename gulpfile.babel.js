@@ -1,12 +1,10 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
-const util = require('gulp-util');
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 const del = require('del');
 
-// const isProduction = util.env.production;
 const paths = {
   src: './src/lean.scss',
   dist: './website/static/css',

@@ -1,8 +1,8 @@
 /* Visual helpers */
 
 .viz-block {
-  background: rgb(131, 104, 138);
+  background: #83688a;
   color: white;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0;
   border: 1px solid #f7f7f7;
 }
