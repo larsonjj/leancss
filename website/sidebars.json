@@ -1,5 +1,8 @@
 {
   "docs": {
-    "Docusaurus": ["getting-started"]
+    "Docusaurus": [
+      "getting-started",
+      "grid"
+    ]
   }
 }

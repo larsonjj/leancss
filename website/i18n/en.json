@@ -8,6 +8,10 @@
       "getting-started": {
         "title": "Getting Started",
         "sidebar_label": "Getting Started"
+      },
+      "grid": {
+        "title": "Grid",
+        "sidebar_label": "Grid"
       }
     },
     "links": {

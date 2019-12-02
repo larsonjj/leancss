@@ -26,7 +26,8 @@ $grid-gutter: 2rem; // 32px
   }
 
   .col {
-    flex-basis: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
     max-width: 100%;
   }
 
