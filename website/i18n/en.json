@@ -5,13 +5,13 @@
     "previous": "Previous",
     "tagline": "Extremely minimal and modular css framework",
     "docs": {
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
+      "getting-started": {
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
       }
     },
     "links": {
-      "Docs": "Docs"
+      "Getting Started": "Getting Started"
     },
     "categories": {
       "Docusaurus": "Docusaurus"
