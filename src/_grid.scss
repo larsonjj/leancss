@@ -3,7 +3,7 @@ $grid-breakpoints: (
   'sm': 36rem,
   'md': 48rem,
   'lg': 60rem,
-  'xlg': 75rem
+  'xl': 75rem
 );
 $grid-cols: 12;
 $grid-gutter: 2rem; // 32px
@@ -13,7 +13,7 @@ $grid-gutter: 2rem; // 32px
   flex-wrap: wrap;
   max-width: 100%;
   width: 100%;
-  &.flush > div {
+  &.collapse > div {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -39,8 +39,13 @@ $grid-gutter: 2rem; // 32px
     .offset-#{$i} {
       margin-left: percentage($i / $grid-cols);
     }
+  }
+}
+
+.row {
+  @for $i from 1 through $grid-cols {
     @each $name, $width in $grid-breakpoints {
-      @media screen and (min-width: $width) {
+      @media (min-width: $width) {
         .offset-#{$name}-#{$i} {
           margin-left: percentage($i / $grid-cols);
         }
